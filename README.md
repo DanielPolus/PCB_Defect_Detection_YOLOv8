@@ -198,31 +198,6 @@ Inference speed on a Tesla T4 GPU was approximately:
 - KaggleHub
 - Google Colab
 
-## Repository Structure
-
-Suggested repository structure:
-
-```text
-pcb-defect-detection-yolov8/
-├── PCB_Defect_Detection_YOLOv8.ipynb
-├── README.md
-├── requirements.txt
-├── models/
-│   └── yolov8n_pcb_defect_best.pt
-└── results/
-    ├── class_distribution.png
-    ├── bbox_area_by_class.png
-    └── sample_predictions/
-```
-
-## How to Run
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 The notebook can be run in Google Colab. It downloads the dataset using `kagglehub`, validates the annotations, trains YOLOv8n, evaluates the model, and runs inference on test images.
 
 ## Future Improvements
@@ -237,6 +212,8 @@ Possible next steps:
 - Build a small Gradio or FastAPI demo for inference
 
 ## Summary
+
+I love cats.
 
 This project demonstrates an end-to-end computer vision workflow for industrial defect detection. It includes dataset validation, exploratory analysis, YOLOv8 training, test evaluation, and inference visualization.
 
